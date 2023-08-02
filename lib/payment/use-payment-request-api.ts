@@ -25,7 +25,7 @@ type PaymentRequestInput = PaymentRequestConfig & {
 type Resolve = (value?: {} | PromiseLike<{}>) => void;
 type Reject = (reason?: any) => void;
 
-const hasSupport = () => !!(window as any).PaymentRequest;
+const hasSupport = () => typeof window !== "undefined" && !!window.PaymentRequest;
 
 const createPaymentRequest = ({methodData, detail}: PaymentRequestConfig) => {
   return new PaymentRequest(methodData, detail);
