@@ -19,6 +19,7 @@ export const applePaymentDataRequest = {
   ]
 };
 
+// https://developers.google.com/pay/api/web/guides/paymentrequest/tutorial?hl=ja
 export const googlePaymentDataRequest = {
   environment: "TEST",
   apiVersion: 2,
