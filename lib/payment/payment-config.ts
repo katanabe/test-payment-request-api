@@ -10,12 +10,9 @@ export const applePaymentDataRequest = {
   ],
   supportedNetworks: ["amex", "discover", "masterCard", "visa"],
   countryCode: "JP",
-  requiredBillingContactFields: ["postalAddress", "name"],
+  requiredBillingContactFields: ["name"],
   requiredShippingContactFields: [
-    "postalAddress",
     "name",
-    "phone",
-    "email"
   ]
 };
 
