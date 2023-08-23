@@ -1,19 +1,12 @@
 // https://applepaydemo.apple.com/payment-request-api
 export const applePaymentDataRequest = {
-  environment: "TEST",
   version: 3,
   merchantIdentifier: "merchant.com.apdemo",
   merchantCapabilities: [
     "supports3DS",
-    "supportsCredit",
-    "supportsDebit"
   ],
   supportedNetworks: ["amex", "discover", "masterCard", "visa"],
-  countryCode: "JP",
-  requiredBillingContactFields: ["name"],
-  requiredShippingContactFields: [
-    "name",
-  ]
+  countryCode: "JP"
 };
 
 // https://developers.google.com/pay/api/web/guides/paymentrequest/tutorial?hl=ja
